@@ -20,15 +20,15 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="161" id="q0Q-Lp-LSt">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="161" id="q0Q-Lp-LSt" customClass="CommentsCell" customModule="MVC_N" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="161"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="q0Q-Lp-LSt" id="Xqy-ky-cBZ">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="161"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="q4M-MB-cZJ">
-                                                    <rect key="frame" x="0.0" y="22" width="394" height="128"/>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="q4M-MB-cZJ">
+                                                    <rect key="frame" x="0.0" y="22" width="414" height="128"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="128" id="gKg-Eh-GDl"/>
@@ -47,13 +47,17 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="cyi-jK-YQd" firstAttribute="leading" secondItem="Xqy-ky-cBZ" secondAttribute="leading" id="1aq-m8-Qjl"/>
-                                                <constraint firstItem="q4M-MB-cZJ" firstAttribute="trailing" secondItem="Xqy-ky-cBZ" secondAttribute="trailingMargin" id="31j-34-Fwi"/>
+                                                <constraint firstItem="q4M-MB-cZJ" firstAttribute="trailing" secondItem="Xqy-ky-cBZ" secondAttribute="trailingMargin" constant="20" id="31j-34-Fwi"/>
                                                 <constraint firstItem="cyi-jK-YQd" firstAttribute="top" secondItem="Xqy-ky-cBZ" secondAttribute="top" id="SRz-7C-1RR"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="q4M-MB-cZJ" secondAttribute="bottom" id="cJe-Pv-QDC"/>
                                                 <constraint firstAttribute="trailing" secondItem="cyi-jK-YQd" secondAttribute="trailing" id="hoH-jq-LHl"/>
-                                                <constraint firstItem="q4M-MB-cZJ" firstAttribute="leading" secondItem="Xqy-ky-cBZ" secondAttribute="leadingMargin" id="pqB-al-u2B"/>
+                                                <constraint firstItem="q4M-MB-cZJ" firstAttribute="leading" secondItem="Xqy-ky-cBZ" secondAttribute="leadingMargin" constant="-20" id="pqB-al-u2B"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="label" destination="cyi-jK-YQd" id="vMo-Ec-XLs"/>
+                                            <outlet property="textView" destination="q4M-MB-cZJ" id="AA4-7f-5Am"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
