@@ -10,6 +10,14 @@ import UIKit
 class CommentsViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        CommentNetworkService.getComments { (response) in
+            self.comments = response.comments
+            self.tableView.reloadData()
+        }
+    }
 }
 
 extension CommentsViewController: UITableViewDelegate {}

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C1D30DE255591F20055A1C2 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1D30DD255591F20055A1C2 /* NetworkService.swift */; };
+		2C1D30E4255596560055A1C2 /* CommentNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1D30E3255596560055A1C2 /* CommentNetworkService.swift */; };
+		2C1D30E72555983B0055A1C2 /* GetCommentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1D30E62555983B0055A1C2 /* GetCommentResponse.swift */; };
 		2CD80DA325542D6100B59C8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD80DA225542D6100B59C8B /* AppDelegate.swift */; };
 		2CD80DA525542D6100B59C8B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD80DA425542D6100B59C8B /* SceneDelegate.swift */; };
 		2CD80DA725542D6100B59C8B /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD80DA625542D6100B59C8B /* CommentsViewController.swift */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C1D30DD255591F20055A1C2 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		2C1D30E3255596560055A1C2 /* CommentNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentNetworkService.swift; sourceTree = "<group>"; };
+		2C1D30E62555983B0055A1C2 /* GetCommentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCommentResponse.swift; sourceTree = "<group>"; };
 		2CD80D9F25542D6100B59C8B /* MVC-N.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVC-N.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CD80DA225542D6100B59C8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CD80DA425542D6100B59C8B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +47,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C1D30DC255591BC0055A1C2 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				2C1D30DD255591F20055A1C2 /* NetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		2C1D30E22555960F0055A1C2 /* CommentNetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				2C1D30E3255596560055A1C2 /* CommentNetworkService.swift */,
+			);
+			path = CommentNetworkService;
+			sourceTree = "<group>";
+		};
 		2CD80D9625542D6100B59C8B = {
 			isa = PBXGroup;
 			children = (
@@ -61,7 +83,9 @@
 			isa = PBXGroup;
 			children = (
 				2CD80DBA25542D9100B59C8B /* Application */,
+				2C1D30DC255591BC0055A1C2 /* NetworkService */,
 				2CD80DBE25542DBD00B59C8B /* Comments */,
+				2C1D30E22555960F0055A1C2 /* CommentNetworkService */,
 				2CD80DBF25542DF300B59C8B /* Supporting files */,
 			);
 			path = "MVC-N";
@@ -122,6 +146,7 @@
 		2CD80DBD25542DB200B59C8B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2C1D30E62555983B0055A1C2 /* GetCommentResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -219,7 +244,10 @@
 				2CD80DA725542D6100B59C8B /* CommentsViewController.swift in Sources */,
 				2CD80DA325542D6100B59C8B /* AppDelegate.swift in Sources */,
 				2CD80DA525542D6100B59C8B /* SceneDelegate.swift in Sources */,
+				2C1D30DE255591F20055A1C2 /* NetworkService.swift in Sources */,
+				2C1D30E72555983B0055A1C2 /* GetCommentResponse.swift in Sources */,
 				2CD80DC4255434C700B59C8B /* CommentsCell.swift in Sources */,
+				2C1D30E4255596560055A1C2 /* CommentNetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
